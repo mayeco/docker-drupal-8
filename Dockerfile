@@ -1,13 +1,13 @@
 FROM drupal:8
 
-RUN mkdir /tmp/twig_ext
-WORKDIR /tmp/twig_ext
-
 # add the Twig C extension
 # https://www.drupal.org/node/2160643
 
 # add the uploadprogress extension
 # https://www.drupal.org/node/793264
+
+RUN mkdir /tmp/twig_ext
+WORKDIR /tmp/twig_ext
 
 ENV TWIG_VERSION 1.22.2
 ENV TWIG_MD5 27ef23e6ef24e0b416d6ac783375f1e1
