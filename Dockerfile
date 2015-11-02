@@ -9,8 +9,8 @@ FROM drupal:8
 RUN mkdir /tmp/twig_ext
 WORKDIR /tmp/twig_ext
 
-ENV TWIG_VERSION 1.22.2
-ENV TWIG_MD5 27ef23e6ef24e0b416d6ac783375f1e1
+ENV TWIG_VERSION 1.22.3
+ENV TWIG_MD5 41245d409760a0a1d27108a5470e2f6f
 
 RUN curl -fSL "https://github.com/twigphp/Twig/archive/v${TWIG_VERSION}.tar.gz" -o twig.tar.gz \
     && echo "${TWIG_MD5} *twig.tar.gz" | md5sum -c - \
